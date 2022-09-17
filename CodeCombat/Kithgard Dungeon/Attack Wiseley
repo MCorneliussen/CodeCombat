@@ -1,0 +1,37 @@
+# Don't step on fire traps!
+hero.moveUp(2)
+hero.attack("Door A")
+hero.moveUp(2)
+enemy = hero.findNearestEnemy()
+if enemy:
+    hero.attack(enemy)
+hero.moveDown(3)
+hero.moveRight(2)
+hero.moveUp()
+hero.attack("Door B")
+hero.moveUp(2)
+enemy2 = hero.findNearestEnemy()
+hero.attack(enemy2)
+hero.moveDown(2)
+hero.moveRight(2)
+hero.attack("Door C")
+hero.moveUp(2)
+enemy3 = hero.findNearestEnemy()
+hero.attack(enemy3)
+hero.moveDown(2)
+hero.moveRight(3)
+enemy3 = hero.findNearestEnemy()
+hero.attack(enemy3)
+enemy4 = hero.findNearestEnemy()
+hero.attack(enemy4)
+hero.moveUp(1)
+hero.moveUp(2)
+hero.moveLeft()
+# Some ogres are stronger than others!
+# Only defeat the ogres you can easily handle.
+# Attack doors by name and ogres with findNearestEnemy.
+# When you're done, escape (move to the x-mark).
+hero.moveDown(4)
+hero.moveLeft(2)
+hero.moveDown()
+hero.moveLeft(2)
