@@ -10,5 +10,7 @@ while True:
     if enemy and enemy.type == "munchkin" and distance < 20:
         # Then attack it.
         hero.attack(enemy)
+    else:
+         hero.moveXY(43, 40)   
 
-#slow boots = time out = fail :)
+#Had to add line 13, 14 to pass. dno whats up with that. (2.5 M/s)
