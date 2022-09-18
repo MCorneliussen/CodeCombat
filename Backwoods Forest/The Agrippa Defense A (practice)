@@ -1,0 +1,12 @@
+while True:
+    enemy = hero.findNearestEnemy()
+    if enemy:
+        pass
+        distance = hero.distanceTo(enemy)
+        if distance < 5:
+            hero.isReady('cleave')
+            hero.cleave()
+        else:
+            if enemy:
+                hero.attack(enemy)
+        pass
