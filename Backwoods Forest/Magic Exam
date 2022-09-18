@@ -1,0 +1,48 @@
+# Try to get the best grade (gold) at the magic exam.
+# Move to each X mark, then use a spell.
+
+def abracadabra():
+    friend = hero.findNearestFriend()
+    if friend:
+        if friend.type == "soldier":
+            hero.cast("heal", friend)
+        elif friend.type == "goliath":
+            hero.cast("grow", friend)
+        else:
+            hero.cast("regen", friend)
+    enemy = hero.findNearestEnemy()
+    if enemy:
+        if enemy.type == "ogre":
+            hero.cast("force-bolt", enemy)
+        elif enemy.type == "brawler":
+            hero.cast("shrink", enemy)
+        else:
+            hero.cast("poison-cloud", enemy)
+
+
+hero.moveXY(18, 39)
+abracadabra()
+
+hero.moveXY(18, 25)
+abracadabra()
+
+hero.moveXY(34, 25)
+abracadabra()
+
+hero.moveXY(34, 39)
+abracadabra()
+
+hero.moveXY(50, 39)
+abracadabra()
+
+hero.moveXY(50, 25)
+abracadabra()
+
+hero.moveXY(66, 25)
+item = hero.findNearestItem()
+hero.cast("grow", hero)
+hero.moveXY(item.pos.x, item.pos.y)
+
+hero.moveXY(66, 39)
+item = hero.findNearestItem()
+hero.moveXY(item.pos.x, item.pos.y)
