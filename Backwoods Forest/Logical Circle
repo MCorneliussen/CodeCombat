@@ -14,8 +14,16 @@ else:
 
 # If ANY of the three values are true, take the left path.
 # Otherwise, go right. Save the 5th value.
-hero.moveXY(20, 24)
+secretD = secretA and secretB and secretC
+if secretD:
+    hero.moveXY(20, 24)
+else:
+    hero.moveXY(40, 24)
 
 # If ALL five values are true, take the high path.
 # Otherwise, take the low path.
-hero.moveXY(30, 33)
+secretD = secretA and secretB and secretC
+if secretD:
+    hero.moveXY(30, 33)
+else:
+    hero.moveXY(30, 15)
