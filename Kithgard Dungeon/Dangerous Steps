@@ -1,0 +1,15 @@
+# Defeat the ogres using their names.
+hero.say("Sog, come to me")
+hero.moveRight()
+# Defeat the first pair of ogres.
+hero.attack("Sog")
+hero.attack("Sog")
+hero.attack("Gos")
+hero.attack("Gos")
+# Defeat the second pair of ogres.
+hero.moveRight(2)
+hero.attack("Ergo")
+hero.attack("Ergo")
+hero.attack("Kro")
+hero.attack("Kro")
+hero.say("Sog, Gos, Ergo and Kro shall fall beneath my might.")
